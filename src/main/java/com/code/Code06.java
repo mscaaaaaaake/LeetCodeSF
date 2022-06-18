@@ -48,7 +48,10 @@ public class Code06 {
         //那么正负数的十进制展示加上位移运算符号则显示为
         int a = 10;
         int b = (~a + 1);
+        int ab = -10;
+        int bb = (~ab + 1);
         System.out.println(a+"的负数形式为"+b);
+        System.out.println(ab+"的正数形式为"+bb);
         System.out.println("--------------右移知识点---------");
         //>>和>>>的区别
         //>>为带符号右移 >>>为不带符号右移
