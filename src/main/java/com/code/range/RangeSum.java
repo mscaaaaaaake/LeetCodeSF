@@ -80,5 +80,10 @@ public class RangeSum {
         RangeSum2 r = new RangeSum2(N);
         System.out.println(r.RangeSum(6,8));
     }
+    /**
+     * 输出为
+     * 6
+     * 6
+     */
 
 }
