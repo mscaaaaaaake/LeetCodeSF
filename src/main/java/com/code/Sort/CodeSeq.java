@@ -1,4 +1,4 @@
-package com.code;
+package com.code.Sort;
 
 import java.util.Arrays;
 import java.util.HashMap;

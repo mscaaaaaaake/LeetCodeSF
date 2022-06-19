@@ -1,4 +1,4 @@
-package com.code;
+package com.code.Sort;
 
 public class Code01 {
 
