@@ -2,7 +2,7 @@ package com.code.range;
 
 /**
  * 对数器
- * 随机生成样本，对比数据测试bug
+ * 释义：随机生成样本，对比数据测试bug
  */
 public class RandomArrCheck {
 
