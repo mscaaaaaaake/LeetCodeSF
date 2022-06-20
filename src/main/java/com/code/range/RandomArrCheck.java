@@ -111,6 +111,8 @@ public class RandomArrCheck {
         return cArr;
     }
 
+
+
     public static void main(String[] args) {
         //样本随机检查上述插入排序和冒泡排序是否正确
         int times = 10000;
