@@ -1,7 +1,5 @@
 package com.code.range;
 
-import java.util.Arrays;
-
 public class RandomArrCheck {
 
     //选择排序(将第一个数字与后面所有数字对比，小的放在第一个位置，以此类推，第二个数字也是相同做法
@@ -93,21 +91,19 @@ public class RandomArrCheck {
      */
     public static boolean checkSort(int[] arr){
         if(arr.length<2){
-            return true;
+            return false;
         }
         for (int i = 1; i < arr.length; i++) {
             if(arr[i] < arr[i-1]){
-                return false;
+                return true;
             }
         }
-        return true;
+        return false;
     }
 
     public static int[] copyArr(int[] arr){
         int[] cArr = new int[arr.length];
-        for (int i = 0; i < arr.length; i++) {
-            cArr[i] = arr[i];
-        }
+        System.arraycopy(arr, 0, cArr, 0, arr.length);
         return cArr;
     }
 
@@ -123,16 +119,16 @@ public class RandomArrCheck {
             int[] selectArr = SelectionSort(copyArr(newArr));
             int[] insertArr = insertSort(copyArr(newArr));
             int[] insertArr1 = insertSort1(copyArr(newArr));
-            if(!checkSort(bubbleArr)){
+            if(checkSort(bubbleArr)){
                 System.out.println("冒泡排序出错");
                 break;
-            } else if (!checkSort(selectArr)) {
+            } else if (checkSort(selectArr)) {
                 System.out.println("选择排序出错");
                 break;
-            }else if (!checkSort(insertArr)) {
+            }else if (checkSort(insertArr)) {
                 System.out.println("插入排序出错");
                 break;
-            }else if (!checkSort(insertArr1)) {
+            }else if (checkSort(insertArr1)) {
                 System.out.println("插入排序1出错");
                 break;
             }
